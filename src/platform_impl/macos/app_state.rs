@@ -287,7 +287,7 @@ impl AppState {
     }
 
     pub fn launched(app_delegate: &Object) {
-        apply_activation_policy(app_delegate);
+        //apply_activation_policy(app_delegate);
         unsafe {
             let ns_app = NSApp();
             window_activation_hack(ns_app);
